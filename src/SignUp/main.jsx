@@ -4,8 +4,8 @@ import img1 from '../img/breadcrumb-1[1].jpg'
 import { yupResolver } from "@hookform/resolvers/yup"
 import * as yup from "yup"
 import { useForm } from 'react-hook-form';
-    import { BsEye } from 'react-icons/bs'
-    import { BsEyeSlash } from 'react-icons/bs'
+import { BsEye } from 'react-icons/bs'
+import { BsEyeSlash } from 'react-icons/bs'
 
 const schema = yup.object({
     fullName: yup.string().required().min(3, "Минимальная длина 3!"),
@@ -17,10 +17,10 @@ const schema = yup.object({
 
 function Signup() {
 
- 
+
     const [showPassword, setShowPassword] = React.useState(false);
 
-    const change= () => {
+    const change = () => {
         setShowPassword(!showPassword);
     };
 
@@ -34,7 +34,7 @@ function Signup() {
 
 
             <div className="register-img">
-                <img src={img1}  alt="Background"/>
+                <img src={img1} alt="Background" />
                 <div className="register-text">
                     <h3>Register</h3>
                     <div>
@@ -66,7 +66,7 @@ function Signup() {
                             placeholder="Email"
                             {...register('email')} />
 
-                        <p style={{ color: "red",  fontSize: "14px"}}>{errors.email?.message}</p>
+                        <p style={{ color: "red", fontSize: "14px" }}>{errors.email?.message}</p>
 
                         <div className="relative-eye">
                             <input type={showPassword ? 'text' : 'password'}
@@ -74,7 +74,7 @@ function Signup() {
                                 id="password"
                                 placeholder="Password"
                                 {...register('password')} />
-                             <button className='eye' onClick={change}>
+                            <button className='eye' onClick={change}>
                                 {showPassword ? <BsEyeSlash /> : <BsEye />}
                             </button>
                         </div>
@@ -89,8 +89,8 @@ function Signup() {
                             {...register('confirmPassword')} />
 
                         <p style={{ color: "red" }}>{errors.confirmPassword?.message}</p>
-                    <div className="accept">
-                        <input type="checkbox"  required/>  <p>I Agree with the <a href="https://templates.envytheme.com/jube/default/terms-of-service.html">Terms & conditions</a></p>
+                        <div className="accept">
+                            <input type="checkbox" required />  <p>I Agree with the <a href="https://templates.envytheme.com/jube/default/terms-of-service.html">Terms & conditions</a></p>
                         </div>
                         <button><a href="http://localhost:5173/signup">Registre Now</a></button>
                         <p>Have an Account? <a href="https://templates.envytheme.com/jube/default/login.html">Sign In</a ></p>
