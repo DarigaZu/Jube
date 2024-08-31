@@ -14,7 +14,7 @@ const schema = yup.object({
     confirmPassword: yup.string().oneOf([yup.ref('password')], 'Пароли не совпадают')
 }).required();
 
-
+    
 function Signup() {
 
 

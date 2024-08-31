@@ -117,7 +117,7 @@ function Header() {
                                     <span className="header-text">Home<BiChevronDown className="arrow" /> </span>
                                 </button>
                                 {dropDownHome &&
-                                    <div className="dropdown-menu">
+                                    <div className="dropdown-menu"> 
                                         <p>Home One</p>
                                         <p>Home Two</p>
                                         <Link to="/" className="link header-text"><p>Home Three</p></Link>
