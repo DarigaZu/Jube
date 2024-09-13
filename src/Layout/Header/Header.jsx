@@ -120,7 +120,7 @@ function Header() {
                                     <div className="dropdown-menu"> 
                                         <p>Home One</p>
                                         <p>Home Two</p>
-                                        <Link to="/" className="link header-text"><p>Home Three</p></Link>
+                                        <Link to="/Jube" className="link header-text"><p>Home Three</p></Link>
                                     </div>
                                 }
                             </div>

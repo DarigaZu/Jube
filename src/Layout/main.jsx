@@ -14,7 +14,7 @@ function Layout(){
         <div className="">
             <Header/>
             <Routes>
-                <Route path='/' element={<Home/>}/>
+                <Route path='/Jube' element={<Home/>}/>
                 <Route path='/about' element={<AboutUs/>}/>
                 <Route path='/signup' element={<Signup/>}/>
                 <Route path='/shop' element={<Shop/>}/>
